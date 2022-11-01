@@ -6,9 +6,9 @@ print(sum_to(10))
 
 
 
-def largest(list):
-  big = list[0]
-  for x in list:
+def largest(nums):
+  big = nums[0]
+  for x in nums:
     if x > big:
       big = x
   return big
