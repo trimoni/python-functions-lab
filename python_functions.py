@@ -4,12 +4,37 @@ def sum_to(n):
 print(sum_to(6))
 print(sum_to(10))
 
+
+
 def largest(list):
-  max = list[0]
+  big = list[0]
   for x in list:
-    if x > max:
-      max = x
-  return max
+    if x > big:
+      big = x
+  return big
 
 print(largest([1, 2, 3, 4, 0]))
 print(largest([10, 4, 2, 231, 91, 54]))
+
+
+
+def occurrences(str1, str2):
+  return str1.count(str2)
+
+print(occurrences('fleep floop', 'e'))
+print(occurrences('fleep floop', 'p'))
+print(occurrences('fleep floop', 'ee'))
+print(occurrences('fleep floop', 'fe'))
+
+
+
+def product(*args):
+  total = 1
+  for arg in args:
+    total *= arg
+  return total
+
+print(product(-1, 4))
+print(product(2, 5, 5))
+print(product(4, 0.5, 5))
+
